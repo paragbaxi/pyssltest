@@ -502,8 +502,8 @@ parser.add_argument('-o','--output', help='Output csv file', required=True)
 parser.add_argument('-n','--new', help='Start new assesment, dont use cache', required=False, action='store_true')
 argsdict = vars(parser.parse_args())
 
-if not os.path.exists(os.getcwd() + "\\results"):
-    os.makedirs(os.getcwd()+ "\\results")
+if not os.path.exists(os.getcwd() + "/results"):
+    os.makedirs(os.getcwd()+ "/results")
 
 newjob = argsdict['new']
 in_file = argsdict['input']
